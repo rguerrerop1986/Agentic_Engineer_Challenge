@@ -141,12 +141,11 @@ curl -s -X POST http://localhost:8000/checkout \
 Seeded config: `tax_rate=0.13`, `discount_rate=0.10`, `discount_threshold=100`. 
 Discount only kicks in when subtotal is strictly greater than the threshold defined, in this case the threshold is greater so we apply a discount:
 
-```json
-{
-  "subtotal": 51.0,
-  "taxes": 6.63,
-  "discount": 0.0,
-  "total": 57.63
+```json{
+	"subtotal": "112.49",
+	"taxes": "14.62",
+	"discount": "11.25",
+	"total": "115.86"
 }
 ```
 
